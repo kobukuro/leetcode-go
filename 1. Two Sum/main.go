@@ -4,11 +4,12 @@ import "fmt"
 
 func twoSum(nums []int, target int) []int {
 	lookup := make(map[int]int)
-	for i := 0; i < len(nums); i++ {
-		if value, exists := lookup[target-nums[i]]; exists {
-			return []int{i, value}
+	for idx, num := range nums {
+		complement := target - num
+		if complementIndex, exists := lookup[complement]; exists {
+			return []int{idx, complementIndex}
 		} else {
-			lookup[nums[i]] = i
+			lookup[num] = idx
 		}
 	}
 	return nil
