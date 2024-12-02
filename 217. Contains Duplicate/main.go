@@ -3,18 +3,17 @@ package main
 import "fmt"
 
 func containsDuplicate(nums []int) bool {
-	lookup := make(map[int]bool)
-	for i := 0; i < len(nums); i++ {
-		if _, exists := lookup[nums[i]]; exists {
+	lookup := map[int]bool{}
+	for _, num := range nums {
+		if _, ok := lookup[num]; ok {
 			return true
-		} else {
-			lookup[nums[i]] = true
 		}
+		lookup[num] = true
 	}
 	return false
 }
 func main() {
 	nums := []int{1, 2, 3, 1}
 	result := containsDuplicate(nums)
-	fmt.Println(result)
+	fmt.Println(result) // true
 }
