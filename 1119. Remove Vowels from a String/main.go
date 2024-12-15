@@ -21,5 +21,5 @@ func removeVowels(s string) string {
 func main() {
 	s := "leetcodeisacommunityforcoders"
 	res := removeVowels(s)
-	fmt.Println(res)
+	fmt.Println(res) // ltcdscmmntyfrcdrs
 }
