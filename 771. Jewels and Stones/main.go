@@ -18,5 +18,5 @@ func numJewelsInStones(jewels string, stones string) int {
 func main() {
 	jewels := "aA"
 	stones := "aAAbbbb"
-	fmt.Println(numJewelsInStones(jewels, stones))
+	fmt.Println(numJewelsInStones(jewels, stones)) // 3
 }
