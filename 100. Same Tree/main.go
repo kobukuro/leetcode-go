@@ -26,6 +26,5 @@ func isSameTree(p *TreeNode, q *TreeNode) bool {
 func main() {
 	p := &TreeNode{Val: 1, Left: &TreeNode{Val: 2}, Right: &TreeNode{Val: 3}}
 	q := &TreeNode{Val: 1, Left: &TreeNode{Val: 2}, Right: &TreeNode{Val: 3}}
-	res := isSameTree(p, q)
-	fmt.Println(res)
+	fmt.Println(isSameTree(p, q)) // true
 }
