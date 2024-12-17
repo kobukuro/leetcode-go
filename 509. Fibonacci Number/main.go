@@ -16,7 +16,7 @@ func fibRecursive(n int, memo map[int]int) int {
 	return memo[n]
 }
 func fib(n int) int {
-	memo := make(map[int]int)
+	memo := map[int]int{}
 	return fibRecursive(n, memo)
 }
 func main() {
