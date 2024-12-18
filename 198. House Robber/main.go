@@ -20,5 +20,5 @@ func rob(nums []int) int {
 func main() {
 	nums := []int{1, 2, 3, 1}
 	res := rob(nums)
-	fmt.Println(res)
+	fmt.Println(res) // 4
 }
