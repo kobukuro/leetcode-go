@@ -23,5 +23,5 @@ func uniquePaths(m int, n int) int {
 func main() {
 	m := 3
 	n := 7
-	fmt.Println(uniquePaths(m, n))
+	fmt.Println(uniquePaths(m, n)) // 28
 }
