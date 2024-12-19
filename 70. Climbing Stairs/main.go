@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func climbStairsRecursive(n int, memo map[int]int) int {
+func climbStairsRecursion(n int, memo map[int]int) int {
 	if value, exists := memo[n]; exists {
 		return value
 	}
@@ -12,12 +12,12 @@ func climbStairsRecursive(n int, memo map[int]int) int {
 	if n == 0 {
 		return 1
 	}
-	memo[n] = climbStairsRecursive(n-1, memo) + climbStairsRecursive(n-2, memo)
+	memo[n] = climbStairsRecursion(n-1, memo) + climbStairsRecursion(n-2, memo)
 	return memo[n]
 }
 func climbStairs(n int) int {
 	memo := make(map[int]int)
-	return climbStairsRecursive(n, memo)
+	return climbStairsRecursion(n, memo)
 }
 
 func main() {
