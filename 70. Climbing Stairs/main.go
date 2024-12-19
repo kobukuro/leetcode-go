@@ -22,5 +22,5 @@ func climbStairs(n int) int {
 
 func main() {
 	n := 3
-	fmt.Println(climbStairs(n))
+	fmt.Println(climbStairs(n)) // 3
 }
